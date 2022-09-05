@@ -9,3 +9,15 @@ const getInputFieldValueById = id => {
 
 
 // ** button handler functionality
+
+const addToCart = ()=>{
+    const product = getInputFieldValueById('product-field');
+    const quantity = getInputFieldValueById('quantity-field');
+
+};
+
+// ** display the product and quantity
+
+const displayCartItems = ()=>{
+    // ** where to display
+}
