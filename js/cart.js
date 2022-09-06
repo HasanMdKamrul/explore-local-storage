@@ -77,3 +77,15 @@ const storeValueToLocalStorage = (product,quantity)=>{
 
 // ** Display saved cart from localStorage
 
+const displayItemsFromLocalStorage = ()=>{
+
+    const cart = getCartFromLocalStorage();
+
+    for (const product in cart) {
+        const quantity = cart[product];
+        // ** display items to ui function call
+        displayCartItems(product,quantity)
+    }
+};
+
+displayItemsFromLocalStorage();
